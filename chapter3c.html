@@ -1,0 +1,46 @@
+<!-- This is the view of Chapter 3 - Branch 3 -->
+<html>
+	<head>
+		<title> Life or Riddle </title>
+		<link rel="icon" href="assets/logo.jpg" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+		<script>
+			function inputController(){
+				if (left.checked){
+					parent.location='end1.html';
+				}
+				else if(right.checked){
+					parent.location='whatif.html';
+				}
+				else{
+					parent.location='end2.html'
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class='text-white'> <span class='audiowide-font'> So Many Choices </span> </h1>
+		<img src='assets/alive.jpg' width='320'>
+		<p class='text-white'>
+			<span class='lobster-font'> The door opens and you rush outside and see a thick forest. You are silent as you begin to hear cars driving by to the left of you. Though, you see light to the right of you and another house in front of you. </span>
+		</p>
+		<div>
+			<label class='text-white'> <span class='opensans-font'> You run to the:</span> </label>
+			<br>
+			<input type="radio" id='right' name='input-name' value='right'>
+			<label class='text-white'> <span class='bold'> right</span> </label>
+			<br>
+			<input type="radio" id='left' name='input-name' value='left'>
+			<label class='text-white'> <span class='bold'> left</span> </label>
+			<br>
+			<input type="radio" id='straight' name='input-name' value='straight'>
+			<label class='text-white'> <span class='bold'> straight</span> </label>
+			<br>
+			<input type="button" onClick="inputController()" value="Submit">
+		</div>
+		<p class='text-white'> <span class='opensans-font'> Warning choices may lead to endings that have distorted images that effect your eyes. </span> </p>
+	</body>
+</html>

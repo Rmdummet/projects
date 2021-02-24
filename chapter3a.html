@@ -1,0 +1,43 @@
+<!-- This is the view of Chapter 3 - Branch 1 --> 
+<html>
+	<head>
+		<title> Life or Riddle </title>
+		<link rel="icon" href="assets/logo.jpg" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+		<script>
+			function inputController(){
+				if (input1.value == 'the dark'){
+					parent.location='chapter3b.html';
+				}
+				else{
+					parent.location='theabyss.html';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class='text-white'> <span class='audiowide-font'> Haunted </span> </h1>
+		<img src='assets/pathway.jpg' width='320'>
+		<p class='text-white'>
+			<span class='opensans'> The steel door opens and you enter the room and turn left. A intercom buzzes to life. </span></p>
+				<p class='text-red'> <span class='italic'> "Try all you want but you will never make it out alive!" the killer's voice rings as the intercom falls silent.</span> </p> 
+				<p class='text-white'> <span class='opensans-font'> You reach yet another door with an engraved riddle. Yet again you shine the flashlight on the door. </span> </p>
+		
+
+		<p class='text-lightblue'> 
+			<span class='lobster-font'> It can't be seen, can't be felt, can't be heard, and can't be smelt. It lies behind the stars and under hills, and empty holes it fills. It comes first and follows after, Ends life, and kills laughter. What is it? </span>
+		<p>
+
+		<p class='text-white'>
+			<span class='opensans-font'> You are silent as you figure out the answer. You hope you are correct as you slide the plate into the door. </span>
+		</p>
+		<div>
+			<label class='text-white'> <span class='bold'> Input Answer:</span> </label>
+			<input type="text" id='input1'>
+			<input type="button" value='Submit' onClick="inputController()">
+		</div>
+	</body>
+</html>

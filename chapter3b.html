@@ -1,0 +1,41 @@
+<!-- This is the view of Chapter3 - Branch 2 -->
+<html>
+	<head>
+		<title> Life or Riddle </title>
+		<link rel="icon" href="assets/logo.jpg" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+		<script>
+			function inputController(){
+				if (input1.value == 'A cave'){
+					parent.location='chapter3c.html';
+				}
+				else{
+					parent.location='whole.html';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class='text-white'> <span class='audiowide-font'> Possiblities </span> </h1>
+		<img src='assets/stairs.jpg' width='320'>
+		<p class='text-white'>
+			<span class='opensans-font'> You smile as the second door opens leading to stairs going upward. Your heart beats fast in your chest as you can see the natural light shine through the many windows in the cabin. As you stand at the top of the stairs, you see a sledgehammer leaning against the wall and pick it up. You reach the final door that leads out of the abandoned cabin. You quickly read the final riddle. </span>
+		</p>
+
+		<p class='text-lightblue'>
+			<span class='lobster-font'> On my own, I am darkness, a black abyss. But, Life brings me light with its gentle kiss. I am quiet and cold, but warmth I can hold. Alongside beauties and wonders, sights to be told. My surface may be bare, this I'm aware. But, beautiful secrets I am eager to share. My mouth so large, I swallow you whole. To be in my belly is your goal. What may lie within can drive men to sin. Greed and desire, gluttony's kin. For some, I am fear. For others, hope. My perception shaped from life's scope. From the earth I have come, and forever will stay, even if parts of me crumble away. What am I?</span>
+		</p>
+
+		<p class='text-white'>
+			<span class='opensans-font'> You are silent as you figure out the answer. You hope you are correct as you slide the plate into the door. </span>
+		</p>
+		<div>
+			<label class='text-white'> <span class='bold'>Input Answer:</span> </label>
+			<input type="text" id='input1'>
+			<input type="button" value='Submit' onClick="inputController()">
+		</div>
+	</body>
+</html>
