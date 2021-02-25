@@ -1,0 +1,51 @@
+/* Goal 1: CSS Selectors */
+body{
+	background-color: black;
+}
+
+.class-selector{
+	text-align: right;
+}
+
+#id-selector{
+	text-align: center;
+}
+
+/*font colors */ 
+
+.text-red{
+	color: red;
+}
+
+.text-lightgreen{
+	color: lightgreen;
+}
+
+.text-lightblue{
+	color: lightblue;
+}
+.text-white{
+	color: white;
+}
+
+/* font properties */
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
+/* font families */
+.opensans-font{
+	font-family: 'Open Sans', sans-serif;
+}
+.lobster-font{
+	font-family: 'Lobster', cursive;
+}
+
+.audiowide-font{
+	font-family: 'Audiowide', cursive;
+}
+
